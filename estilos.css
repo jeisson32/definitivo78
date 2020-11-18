@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.div{
+	width: 90%;
+	margin: auto;
+	background:;
+	margin-top: 20px;
+	height: 400px;
+	background: ;
+	padding:20px;
+}
+
+form{
+	width: 90%;
+	margin: auto;
+	background: #999;
+	padding:20px;
+	height: 300px;
+	border-radius: 10px;
+}
+.div2{
+	background:;
+	width: 100%;
+	position:relative; ;
+	height: 15%;
+	margin-bottom: 13px;
+}
+.envi{
+	width: 100%;
+	height: 25%;
+	background:transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+input:last-child{
+	font-size: 16px;
+	background: #fff;
+	width: 30%;
+	height: 35%;
+	text-align: center;	
+	padding-top: 0;
+	border-radius: 7px;
+
+}
+input:last-child:hover{
+	box-shadow: inset .5px 1px 4px 1px #000;
+}
+.div3{
+	width: 100%;
+	height: 25%;
+}
+textarea{
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid aqua;
+	background: #aaa;
+	resize: none;
+
+}
+input{
+	width: 100%;
+	outline: none;
+	border: none;
+	height: 100%; 
+	padding-top:17px; 
+	background: transparent;
+}
+label{
+	width: 100%;
+	height: 60%;
+	font-size: 17px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	top:;
+	transition: all .3s linear; 
+	border-bottom: 2px solid #19a;
+
+}
+.label:after{
+	content: "";
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	background: transparent;
+	transition: background .4s linear;
+
+}
+
+input:focus + .label,
+input:valid + .label{
+	height: 100%;
+	color: #c3ffff;
+	font-size: 15px;
+	transition: all .3s linear; 
+}
+input:focus + .label:after,
+input:valid + .label:after{
+	background: aqua;
+	transition: background .4s linear;
+
+}
+@media screen and (max-width: 800px){
+	form{
+		width: 100%;
+	}
+	.div{
+		width: 90%;
+	}
+}
